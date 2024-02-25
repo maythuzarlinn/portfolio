@@ -1032,7 +1032,7 @@ body {
   color: var(--main-color);
 }
 
-@keyframes blink {
+@keyframes rotation {
   0% {
     transform: rotate(0deg);
   }
@@ -1044,7 +1044,24 @@ body {
 
 .view {
   font-size: 1.5rem;
-  animation: blink 2s linear infinite;
+  animation: rotation 2s linear infinite;
+}
+
+.blinking {
+  animation: blink 2s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
 }
 
 @media (min-width: 480px) {
