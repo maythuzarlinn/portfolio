@@ -1047,6 +1047,14 @@ body {
   animation: rotation 2s linear infinite;
 }
 
+.view-disable-link {
+  font-size: 1.5rem;
+}
+
+.info-alert {
+  color: crimson;
+}
+
 .blinking {
   animation: blink 2s steps(5, start) infinite;
   -webkit-animation: blink 1s steps(5, start) infinite;
